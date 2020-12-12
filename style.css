@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    
+    grid-template-areas: 
+       "header header header"
+       "left content right"
+       "footer footer footer";
+    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    grid-template-rows: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+header, footer, div, content {
+    padding: 20px;
+    border: 2px solid darkgray;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#content {
+    grid-area: content;
+    position: relative;
+    height: fit-content;
+}
+
+#left {
+    grid-area: left;
+    margin-left: 10px;
+    padding: 0;
+    border: none;
+    overflow: none;
+}
+
+.subitem {
+    min-width: 0;
+    min-height: 0;
+    margin-bottom: 20px;
+}
+
+.subitem:last-child{
+    margin-bottom: 0;
+}
+
+#right {
+    grid-area: right;
+    margin-right: 10px;
+}
