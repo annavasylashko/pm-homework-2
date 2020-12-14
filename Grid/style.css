@@ -4,7 +4,7 @@ body {
        "header header header"
        "left content right"
        "footer footer footer";
-    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    grid-template-columns: 8.7rem 1fr 8.7rem;
     grid-template-rows: 20% 1fr 15%;
     grid-gap: 0.7rem;
     height: 100vh;
@@ -26,6 +26,8 @@ header {
     height: 1.2rem;
     margin-left: 15%;
     margin-top: 3rem;
+    resize: none;
+    border: 1px solid #000;
 }
 
 footer {

@@ -11,6 +11,7 @@ body {
     margin-left: 15%;
     margin-top: 3rem;
     border: 1px solid #000;
+    resize: none;
 }
 
 .main {
@@ -30,7 +31,7 @@ body {
 
 .main__left, .main__right {
     margin: 0.7rem;
-    flex: 1 6 20%;
+    flex: 0 0 8rem;
 }
 
 .main__left {
@@ -96,6 +97,7 @@ header, footer {
 
     .main__left, .main__right {
         margin: 0 0.7rem 0.7rem 0.7rem;
+        flex-grow: 1;
     }
 
     .main__left__item {
