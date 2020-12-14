@@ -17,7 +17,7 @@ header, footer, div, content {
     border: 1px solid #000;
 }
 
-#pageHeader {
+header {
     grid-area: header;
 }
 
@@ -28,33 +28,33 @@ header, footer, div, content {
     margin-top: 3rem;
 }
 
-#pageFooter {
+footer {
     grid-area: footer;
 }
 
-#content {
+.content {
     grid-area: content;
     height: 450px;
     /*or height: fit-content in order to enable the box 
     to use the available space, but never more than max-content  */
 }
 
-#left {
+.left {
     grid-area: left;
     margin-left: 0.7rem;
     border: none;
 }
 
-.subitem {
+.left__item {
     height: 8rem;
     margin-bottom: 0.7rem;
 }
 
-.subitem:last-child{
+.left__item:last-child{
     margin-bottom: 0; 
 }
 
-#right {
+.right {
     grid-area: right;
     margin-right: 0.7rem;
     height: 450px;
@@ -77,20 +77,20 @@ header, footer, div, content {
         margin-top: 2rem;
     }
 
-    #content, #right {
+    .content, .right {
         margin: 0 0.7rem 0.7rem 0.7rem;
         border: 1px solid #000;
         height: 200px;
     }
    
-    #left {
+    .left {
         display: grid;  
         grid-template-columns: repeat(auto-fill, 8rem);        
         grid-gap: 0.7rem;
         padding-right: 0.7rem;
     }
 
-    .subitem {
+    .left__item {
         width: 8rem;
     }
 }
